@@ -6,9 +6,15 @@
     <title>聯繫我們 - 戴記福建涼麵</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <style>
+        body { background-color: #fdfaf6; font-family: "Microsoft JhengHei", sans-serif; }
+        .info-card { border: none; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .map-container { border-radius: 15px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); height: 450px; }
+        .important-notice { background-color: #fff3cd; border-left: 5px solid #ffc107; }
+    </style>
 </head>
-<body style="background: #fdfaf6;">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">戴記福建涼麵</a>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -22,30 +28,64 @@
         </div>
     </nav>
 
-    <div class="container my-5 py-5">
-        <div class="row g-5">
-            <div class="col-md-5">
-                <h2 class="fw-bold mb-4">來找我們吧</h2>
-                <div class="mb-4">
-                    <p class="mb-1 fw-bold">地址：</p>
-                    <p>105臺北市松山區富錦街427號</p>
+    <div class="container my-5 py-4">
+        <h2 class="text-center fw-bold mb-5">聯繫我們</h2>
+        
+        <div class="row g-4">
+            <div class="col-lg-5">
+                <div class="card info-card p-4">
+                    <h4 class="fw-bold mb-4">店家資訊</h4>
+                    <div class="mb-3">
+                        <label class="text-muted small d-block">地址</label>
+                        <p class="fw-bold"><i class="bi bi-geo-alt-fill text-danger me-2"></i>105 臺北市松山區富錦街 427 號</p>
+                    </div>
+                    <div class="mb-3">
+                        <label class="text-muted small d-block">電話</label>
+                        <p class="fw-bold"><i class="bi bi-telephone-fill text-success me-2"></i><a href="tel:0933167325" class="text-decoration-none text-dark">0933 167 325</a></p>
+                    </div>
+                    
+                    <hr>
+                    
+                    <h5 class="fw-bold mb-3">營業時間</h5>
+                    <ul class="list-unstyled">
+                        <li class="d-flex justify-content-between mb-1"><span>星期一至星期六</span> <span>07:00 – 14:30</span></li>
+                        <li class="d-flex justify-content-between text-danger fw-bold"><span>星期日</span> <span>休息</span></li>
+                    </ul>
+                    
+                    <div class="important-notice p-3 mt-4 rounded">
+                        <p class="mb-1 fw-bold text-dark"><i class="bi bi-info-circle-fill me-2"></i>用餐須知</p>
+                        <ul class="small mb-0 ps-3">
+                            <li>本店目前<strong>不接受訂位</strong>。</li>
+                            <li>結帳方式<strong>僅收現金</strong>，不支援刷卡或電子支付。</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="mb-4">
-                    <p class="mb-1 fw-bold">電話：</p>
-                    <a href="tel:0933167325" class="text-decoration-none">0933-167-325</a>
-                </div>
-                <div class="mb-4">
-                    <p class="mb-1 fw-bold">營業時間：</p>
-                    <p>週一 - 週六 07:00 – 14:30<br>週日 公休</p>
-                </div>
-                <div class="alert alert-warning small">備註：只收現金，不接受訂位。</div>
             </div>
-            <div class="col-md-7">
-                <div class="ratio ratio-4x3 rounded-3 overflow-hidden shadow">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.407481109968!2d121.5583!3d25.06!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ab9892219493%3A0xb3388c2273010b!2z5oi06KiY56aP5bu65ray6bq1!5e0!3m2!1szh-TW!2stw!4v1600000000000" allowfullscreen="" loading="lazy"></iframe>
+
+            <div class="col-lg-7">
+                <div class="map-container">
+                    <iframe 
+                        width="100%" 
+                        height="100%" 
+                        frameborder="0" 
+                        style="border:0" 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.364491746215!2d121.55912177606553!3d25.06088537780041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ab8d17fba749%3A0x113ae869627c3288!2z5oi06KiY56aP5bu65ray6bq1!5e0!3m2!1szh-TW!2stw!4v1710310000000!5m2!1szh-TW!2stw" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="text-end mt-2">
+                    <a href="https://maps.app.goo.gl/ChIJS6f-F42rQjQRiDJ8YmnoOhE" target="_blank" class="btn btn-outline-secondary btn-sm">
+                        <i class="bi bi-map me-1"></i>在 Google 地圖中開啟
+                    </a>
                 </div>
             </div>
         </div>
     </div>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p class="mb-0">© 2026 戴記福建涼麵 | 歡迎您的光臨</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
