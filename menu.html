@@ -1,51 +1,260 @@
-<div class="container my-5">
-    <h2 class="fw-bold text-center mb-5">美味餐點清單</h2>
-    
-    <h3 class="border-start border-4 border-primary ps-3 mb-4">招牌涼麵</h3>
-    <div class="row g-4 mb-5">
-        <div class="col-md-4">
-            <div class="card h-100 shadow-sm border-0 overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=500" class="card-img-top" alt="麻醬涼麵">
-                <div class="card-body">
-                    <h5 class="card-title fw-bold">麻醬涼麵</h5>
-                    <p class="card-text text-muted small">精選香醇麻醬，搭配獨家酸甜醬汁，清爽不膩口。</p>
-                    <div class="text-danger fw-bold">$50 (小) / $60 (大)</div>
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美味餐點 - 戴記福建涼麵</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root { --primary-orange: #d35400; --bg-cream: #fdfaf6; }
+        body { background-color: var(--bg-cream); font-family: "Microsoft JhengHei", sans-serif; }
+        .category-header { 
+            background: var(--primary-orange); 
+            color: white; 
+            padding: 10px 20px; 
+            border-radius: 5px; 
+            margin-top: 40px;
+            margin-bottom: 25px;
+            display: inline-block;
+        }
+        .menu-card { 
+            border: none; 
+            border-radius: 12px; 
+            transition: 0.3s; 
+            overflow: hidden; 
+            background: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        .menu-card:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
+        .menu-img { height: 160px; object-fit: cover; background-color: #eee; }
+        .price-tag { color: var(--primary-orange); font-weight: bold; font-size: 1.1rem; }
+        .item-desc { font-size: 0.85rem; color: #6c757d; min-height: 40px; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">戴記福建涼麵</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">首頁</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">關於我們</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="menu.html">美味餐點</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">聯繫我們</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h2 class="text-center fw-bold mb-2">美味餐點</h2>
+        <p class="text-center text-muted mb-5">堅持台灣味傳統工法，每一口都是真材實料</p>
+
+        <h3 class="category-header">涼麵類</h3>
+        <div class="row g-4">
+            <div class="col-6 col-md-4">
+                <div class="card h-100 menu-card">
+                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400" class="menu-img" alt="麻醬涼麵">
+                    <div class="card-body text-center">
+                        <h6 class="fw-bold">麻醬涼麵</h6>
+                        <p class="item-desc">特製香醇麻醬，夏日開胃首選。</p>
+                        <div class="price-tag">大 $70 / 小 $55</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="card h-100 menu-card">
+                    <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?w=400" class="menu-img" alt="肉醬涼麵">
+                    <div class="card-body text-center">
+                        <h6 class="fw-bold">肉醬涼麵</h6>
+                        <p class="item-desc">濃郁肉醬與涼麵的完美融合。</p>
+                        <div class="price-tag">大 $90 / 小 $75</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="card h-100 menu-card">
+                    <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400" class="menu-img" alt="榨菜肉絲涼麵">
+                    <div class="card-body text-center">
+                        <h6 class="fw-bold">榨菜肉絲涼麵</h6>
+                        <p class="item-desc">爽脆榨菜與涼麵交織出的層次感。</p>
+                        <div class="price-tag">大 $90 / 小 $75</div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card h-100 shadow-sm border-0 overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&q=80&w=500" class="card-img-top" alt="榨菜肉絲涼麵">
-                <div class="card-body">
-                    <h5 class="card-title fw-bold">榨菜肉絲涼麵</h5>
-                    <p class="card-text text-muted small">鹹香榨菜配上手切肉絲，口感層次豐富。</p>
-                    <div class="text-danger fw-bold">$70</div>
+
+        <h3 class="category-header">熱麵類</h3>
+        <div class="row g-4">
+            <div class="col-6 col-md-4">
+                <div class="card h-100 menu-card">
+                    <img src="https://images.unsplash.com/photo-1612927621455-d02bc8334b92?w=400" class="menu-img" alt="榨菜肉絲麵">
+                    <div class="card-body text-center">
+                        <h6 class="fw-bold">榨菜肉絲麵</h6>
+                        <p class="item-desc">熱騰騰的經典鹹香榨菜風味。</p>
+                        <div class="price-tag">大 $90 / 小 $75</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="card h-100 menu-card">
+                    <img src="https://images.unsplash.com/photo-1591814448473-7f47c32439ad?w=400" class="menu-img" alt="肉骨麵">
+                    <div class="card-body text-center">
+                        <h6 class="fw-bold">肉骨麵</h6>
+                        <p class="item-desc">選用軟嫩肉骨，入口即化的滿足感。</p>
+                        <div class="price-tag">大 $115 / 小 $100</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="card h-100 menu-card">
+                    <img src="https://images.unsplash.com/photo-1627286301478-368c1301b7fe?w=400" class="menu-img" alt="肉醬麵">
+                    <div class="card-body text-center">
+                        <h6 class="fw-bold">肉醬麵</h6>
+                        <p class="item-desc">飽滿肉醬淋在熱麵上，濃郁紮實。</p>
+                        <div class="price-tag">大 $90 / 小 $75</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="card h-100 menu-card">
+                    <img src="https://images.unsplash.com/photo-1552611052-33e04de081de?w=400" class="menu-img" alt="貢丸麵">
+                    <div class="card-body text-center">
+                        <h6 class="fw-bold">貢丸麵</h6>
+                        <p class="item-desc">搭配Q彈大顆貢丸，簡單純粹。</p>
+                        <div class="price-tag">大 $100 / 小 $85</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="card h-100 menu-card">
+                    <img src="https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?w=400" class="menu-img" alt="麻醬麵">
+                    <div class="card-body text-center">
+                        <h6 class="fw-bold">麻醬麵</h6>
+                        <p class="item-desc">經典麻醬香氣，與熱麵完美拌合。</p>
+                        <div class="price-tag">大 $80 / 小 $65</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="card h-100 menu-card">
+                    <img src="https://images.unsplash.com/photo-1526318896980-cf78c088247c?w=400" class="menu-img" alt="蛋花/包貢丸麵">
+                    <div class="card-body text-center">
+                        <h6 class="fw-bold">蛋花/包貢丸麵</h6>
+                        <p class="item-desc">蛋包與貢丸的雙重美味享受。</p>
+                        <div class="price-tag">大 $115 / 小 $100</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="card h-100 menu-card">
+                    <img src="https://images.unsplash.com/photo-1594970719598-882247fe34a4?w=400" class="menu-img" alt="蛋花/包麵">
+                    <div class="card-body text-center">
+                        <h6 class="fw-bold">蛋花/包麵</h6>
+                        <p class="item-desc">滑嫩蛋包搭配熱湯麵，溫潤可口。</p>
+                        <div class="price-tag">大 $85 / 小 $70</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="card h-100 menu-card">
+                    <img src="https://images.unsplash.com/photo-1569562211093-4ed0d0758f12?w=400" class="menu-img" alt="乾拌麵">
+                    <div class="card-body text-center">
+                        <h6 class="fw-bold">乾拌麵</h6>
+                        <p class="item-desc">特製醬汁與麵條的單純契合。</p>
+                        <div class="price-tag">大 $70 / 小 $55</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="card h-100 menu-card">
+                    <img src="https://images.unsplash.com/photo-1512058560552-4234c753367f?w=400" class="menu-img" alt="榨菜肉絲乾拌麵">
+                    <div class="card-body text-center">
+                        <h6 class="fw-bold">榨菜肉絲乾拌麵</h6>
+                        <p class="item-desc">爽口榨菜配上乾拌麵，口感豐富。</p>
+                        <div class="price-tag">大 $90 / 小 $75</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="category-header">湯類</h3>
+        <div class="row g-4">
+            <div class="col-6 col-md-3">
+                <div class="card h-100 menu-card text-center p-2">
+                    <div class="card-body">
+                        <h6 class="fw-bold">貢丸湯</h6>
+                        <p class="item-desc">大顆Q彈貢丸。</p>
+                        <div class="price-tag">$30</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card h-100 menu-card text-center p-2">
+                    <div class="card-body">
+                        <h6 class="fw-bold">榨菜肉絲湯</h6>
+                        <p class="item-desc">清爽解膩首選。</p>
+                        <div class="price-tag">$30</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card h-100 menu-card text-center p-2">
+                    <div class="card-body">
+                        <h6 class="fw-bold">蛋花/包湯</h6>
+                        <p class="item-desc">古早味溫潤湯頭。</p>
+                        <div class="price-tag">$25</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card h-100 menu-card text-center p-2">
+                    <div class="card-body">
+                        <h6 class="fw-bold">蛋花/包貢丸湯</h6>
+                        <p class="item-desc">經典涼麵搭檔。</p>
+                        <div class="price-tag">$45</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card h-100 menu-card text-center p-2 border border-warning">
+                    <div class="card-body">
+                        <h6 class="fw-bold text-danger">肉骨湯 (大推)</h6>
+                        <p class="item-desc">招牌必點，入口即化。</p>
+                        <div class="price-tag">$60</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card h-100 menu-card text-center p-2">
+                    <div class="card-body">
+                        <h6 class="fw-bold">肉骨貢丸湯</h6>
+                        <p class="item-desc">飽足感滿分的組合。</p>
+                        <div class="price-tag">$90</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card h-100 menu-card text-center p-2">
+                    <div class="card-body">
+                        <h6 class="fw-bold">肉骨蛋花/包湯</h6>
+                        <p class="item-desc">老饕最愛的營養組合。</p>
+                        <div class="price-tag">$75</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card h-100 menu-card text-center p-2">
+                    <div class="card-body">
+                        <h6 class="fw-bold">肉骨蛋貢丸湯</h6>
+                        <p class="item-desc">頂級美味，一次滿足。</p>
+                        <div class="price-tag">$105</div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <h3 class="border-start border-4 border-primary ps-3 mb-4">靈魂湯品</h3>
-    <div class="row g-4 mb-5">
-        <div class="col-md-4">
-            <div class="card h-100 shadow-sm border-0 overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&q=80&w=500" class="card-img-top" alt="肉骨湯">
-                <div class="card-body">
-                    <h5 class="card-title fw-bold">肉骨湯 (大推)</h5>
-                    <p class="card-text text-muted small">每日新鮮熬煮，肉質軟嫩至極，老客人的最愛。</p>
-                    <div class="text-danger fw-bold">限量供應</div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card h-100 shadow-sm border-0 overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1613844237701-8f3664fc2393?auto=format&fit=crop&q=80&w=500" class="card-img-top" alt="貢丸蛋包湯">
-                <div class="card-body">
-                    <h5 class="card-title fw-bold">貢丸蛋包湯</h5>
-                    <p class="card-text text-muted small">古早味蛋包配上Q彈貢丸，簡單卻不平凡。</p>
-                    <div class="text-danger fw-bold">$40</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
