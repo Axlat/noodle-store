@@ -1,41 +1,112 @@
-<section class="container my-5 py-5">
-    <div class="text-center mb-5">
-        <h2 class="fw-bold">顧客好評推薦</h2>
-        <div class="text-warning fs-4">
-            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
-            <span class="text-muted ms-2">(4.3 顆星 / 1,673 則評論)</span>
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>戴記福建涼麵 | 首頁</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <style>
+        :root { --primary: #d35400; --light: #fdfaf6; }
+        body { background-color: var(--light); font-family: "Microsoft JhengHei", sans-serif; }
+        .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1200'); background-size: cover; background-position: center; height: 60vh; display: flex; align-items: center; color: white; text-align: center; }
+        .review-card { border: none; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: 0.3s; }
+        .review-card:hover { transform: translateY(-5px); }
+        .star-color { color: #f1c40f; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">戴記福建涼麵</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">首頁</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">關於我們</a></li>
+                    <li class="nav-item"><a class="nav-link" href="menu.html">美味餐點</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">聯繫我們</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <div class="row g-4">
-        <div class="col-md-4">
-            <div class="card h-100 border-0 shadow-sm p-3">
-                <div class="card-body">
-                    <p class="card-text italic">「這家應該是目前吃到最頂的肉骨湯，涼麵的部分有比較偏酸，個人很愛！骨肉湯真的是大推。」</p>
-                    <hr>
-                    <div class="d-flex align-items-center">
-                        <div class="fw-bold">Roy Chen</div>
-                        <span class="badge bg-light text-dark ms-2 fw-normal">在地嚮導</span>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1 class="display-3 fw-bold">戴記福建涼麵</h1>
+            <p class="lead">民生社區低調名店：清爽涼麵與軟嫩肉骨湯的完美交織</p>
+            <a href="menu.html" class="btn btn-warning btn-lg mt-3">立即看菜單</a>
+        </div>
+    </header>
+
+    <main class="container my-5 py-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Google 評論 4.3 顆星</h2>
+            <p class="text-muted">來自 1,600+ 位顧客的真實回饋</p>
+            <div class="fs-3 star-color">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+            </div>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 review-card p-3">
+                    <div class="card-body">
+                        <div class="star-color mb-2"><i class="bi bi-star-fill"></i>×5</div>
+                        <p class="small text-muted">「涼麵口味偏甜，麻醬不會濃稠到乾。貢丸很Q彈紮實，蛋花的份量也不敷衍！」</p>
+                        <hr>
+                        <div class="fw-bold small">Shelly Hsueh <span class="badge bg-light text-dark fw-normal">在地嚮導</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 review-card p-3">
+                    <div class="card-body">
+                        <div class="star-color mb-2"><i class="bi bi-star-fill"></i>×5</div>
+                        <p class="small text-muted">「肉骨湯好好喝、榨菜肉絲乾拌麵也非常好吃！要不是肚子裝不下，不然也想點涼麵來試試。」</p>
+                        <hr>
+                        <div class="fw-bold small">蔡饅頭 <span class="badge bg-light text-dark fw-normal">在地嚮導</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 review-card p-3">
+                    <div class="card-body">
+                        <div class="star-color mb-2"><i class="bi bi-star-fill"></i>×5</div>
+                        <p class="small text-muted">「肉質很軟嫩完全不柴很驚艷！加醋之後味道有整個更上一層樓，店員們都很親切。」</p>
+                        <hr>
+                        <div class="fw-bold small">Louise <span class="badge bg-light text-dark fw-normal">在地嚮導</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 review-card p-3">
+                    <div class="card-body">
+                        <div class="star-color mb-2"><i class="bi bi-star-fill"></i>×5</div>
+                        <p class="small text-muted">「涼麵醬調的真好吃！肉蛋花湯內的肉好嫩，工作人員雖然忙碌但態度很好。」</p>
+                        <hr>
+                        <div class="fw-bold small">Adela Hsu <span class="badge bg-light text-dark fw-normal">在地嚮導</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 review-card p-3">
+                    <div class="card-body">
+                        <div class="star-color mb-2"><i class="bi bi-star-fill"></i>×5</div>
+                        <p class="small text-muted">「麻醬涼麵開啟夏天食慾。肉骨湯肉質軟嫩、入口即化，肉屑不會卡牙縫，鹹香具特色！」</p>
+                        <hr>
+                        <div class="fw-bold small">灰原哀 <span class="badge bg-light text-dark fw-normal">在地嚮導</span></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card h-100 border-0 shadow-sm p-3">
-                <div class="card-body">
-                    <p class="card-text">「老闆很親切。麻醬不會濃稠到乾或難攪拌，底下有更液狀的偏甜醬汁，攪拌在一起非常好吃。」</p>
-                    <hr>
-                    <div class="fw-bold">Shelly Hsueh</div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card h-100 border-0 shadow-sm p-3">
-                <div class="card-body">
-                    <p class="card-text">「用餐環境是傳統麵攤感。不是講究裝潢的店，但有一種難得的、幾十年不變的味道。台北早餐首選。」</p>
-                    <hr>
-                    <div class="fw-bold">Dennis Hu</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p class="mb-0">© 2026 戴記福建涼麵 | 歡迎您的光臨</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
