@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美味餐點 - 戴記福建涼麵</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body { background: #fdfaf6; }
+        .menu-card { background: white; border: none; border-radius: 12px; transition: 0.3s; }
+        .menu-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">戴記福建涼麵</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">首頁</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">關於我們</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="menu.html">美味餐點</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">聯繫我們</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5 text-center">
+        <h2 class="fw-bold mb-5">美味餐點清單</h2>
+        <div class="row g-4">
+            <h4 class="text-start text-muted mt-5 mb-3"># 招牌涼麵系列</h4>
+            <div class="col-md-4">
+                <div class="card menu-card p-3">
+                    <h5>麻醬涼麵</h5>
+                    <p class="text-muted small">經典比例，香濃不膩</p>
+                    <div class="text-danger fw-bold">$50 起</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card menu-card p-3">
+                    <h5>榨菜肉絲涼麵</h5>
+                    <p class="text-muted small">爽脆口感，老饕最愛</p>
+                    <div class="text-danger fw-bold">$70 起</div>
+                </div>
+            </div>
+            
+            <h4 class="text-start text-muted mt-5 mb-3"># 靈魂湯品系列</h4>
+            <div class="col-md-4">
+                <div class="card menu-card p-3 border-warning" style="border: 2px solid;">
+                    <h5>肉骨湯</h5>
+                    <p class="text-muted small">入口即化，限量供應</p>
+                    <div class="text-danger fw-bold">$推薦</div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card menu-card p-3">
+                    <h5>蛋花貢丸湯</h5>
+                    <p class="text-muted small">涼麵的最佳搭檔</p>
+                    <div class="text-danger fw-bold">$40</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
